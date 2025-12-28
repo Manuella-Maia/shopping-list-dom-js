@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./logo1.png">
+    <script src="./script.js" defer></script>
+    <title>Lista de Compras Online</title>
+</head>
+<body>
+    <div class="main-content">
+
+        <h2>Sua lista de compras na palma da sua mão</h2>
+        
+        <div class="sessao-InpuUsuario">
+            
+            <label>Digite o item : </label>
+            <input type="text" id="inputItem" placeholder="Exemplo : Banana prata">
+
+            <label>Em qual categoria se encaixa ? </label>
+            <input type="text" id="inputCategoria" placeholder="Exemplo : Frutas">
+            
+            <button id="buttonAdcionar">Adcionar</button>
+        </div>
+        
+        <div class="listaCompras">
+            <button id ="buttonMostrarLista">Exibir Lista</button>
+            <div id="mostrarLista"></div>
+        </div>
+        
+        <div class="removerItens">
+            
+            <div class="sessao-remover">
+                <label>Digite o item que deseja remover : </label>
+                <input type="text" id="inputRemoverItem" placeholder="Exemplo : Banana prata">
+                
+                <button id="buttonRemover">Remover item</button>
+            </div>
+            
+            <div id="mostarRemocao"></div>
+            
+        </div>
+    
+    </div>
+</body>
+</html>

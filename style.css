@@ -1,0 +1,129 @@
+/* Reset simples */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fefefe; /* Um branco levemente "papel" */
+    color: #222;
+    font-family: 'Courier New', Courier, monospace; /* Fonte que lembra máquina de escrever/lista manual */
+    padding: 20px;
+    line-height: 1.6;
+
+    /* ADICIONE ESTAS LINHAS */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh;   /* Garante que o corpo ocupe a altura da tela */
+}
+
+.main-content {
+    width: 100%;
+    max-width: 500px; /* Limita a largura para parecer um bloco centralizado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro desse bloco */
+}
+
+h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Divisões de seção */
+/* .sessao-InpuUsuario, .listaCompras {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Bordas finas e secas */
+
+.sessao-InpuUsuario, .listaCompras, .removerItens {
+    width: 100%; 
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff; /* Fundo branco destaca do fundo da página */
+}
+
+/* Labels e Inputs */
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #000;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+}
+
+
+input:focus {
+    background: #fff9c4; /* Amarelo clarinho de "post-it" ao focar */
+}
+
+/* Botões Estilo "Carimbo" */
+button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #444;
+}
+
+button:active {
+    background: #000;
+    transform: translateY(2px);
+}
+
+/* Botão de remoção com destaque diferente */
+#buttonRemover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* Área de Exibição da Lista */
+#mostrarLista p {
+    margin-top: 10px;
+    border-bottom: 1px dashed #ccc; /* Linhas pontilhadas como caderno */
+    padding: 5px 0;
+}
+
+/* Área de mensagens */
+#mostarRemocao {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.msg-erro {
+    color: #d32f2f; 
+}
+
+
+.msg-sucesso {
+    color: #2e7d32; 
+}
