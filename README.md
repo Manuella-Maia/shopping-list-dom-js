@@ -5,6 +5,8 @@ Projeto simples feito em **JavaScript puro**, criado para praticar **lógica de 
 A ideia foi construir uma lista de compras funcional, com organização por categorias, permitindo adicionar, visualizar e remover itens diretamente pela interface.  
 Tudo roda no navegador, sem frameworks ou bibliotecas externas.
 
+Link para acessar o projeto : https://manuella-maia.github.io/shopping-list-dom-js/
+
 ---
 
 ## 🚀 Funcionalidades
